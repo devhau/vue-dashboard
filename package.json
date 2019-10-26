@@ -2,7 +2,6 @@
   "name": "@hauerp/vue-dashboard",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hauerp/vue-dashboard.git"
@@ -12,5 +11,37 @@
   "bugs": {
     "url": "https://github.com/hauerp/vue-dashboard/issues"
   },
-  "homepage": "https://github.com/hauerp/vue-dashboard#readme"
+  "homepage": "https://github.com/hauerp/vue-dashboard#readme",
+  "main": "lib/module.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue example lib test",
+    "test": "yarn lint && jest",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
+    "get-port": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "request": "latest",
+    "request-promise-native": "latest",
+    "standard-version": "latest"
+  }
 }
