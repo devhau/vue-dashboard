@@ -1,5 +1,5 @@
 <template>
-  <div class="widget-short">
+  <div class="widget-base">
     <div v-if="IsSetting" class="widget-setting">
       <h3>{{option.Title}}</h3>      
     </div>
@@ -9,10 +9,10 @@
   </div>
 </template>
 <style>
-.widget-short{
+.widget-base{
   height: 100%;
 }
-.widget-short .icon{
+.widget-base .icon{
   width: 80px;
   height: 80px;
   text-align: center;

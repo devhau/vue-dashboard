@@ -59,9 +59,9 @@
 <script>
     import * as utils from './utils'
     import { List as ContainerList } from './DashboardContainer.vue'
-    import Widgets from './Widgets'
-
+    import Widgets from './Widgets/index.js'
     export default {
+        components:{...Widgets},
         props: {
             boxId: {
                 required: true

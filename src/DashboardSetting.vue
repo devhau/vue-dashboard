@@ -2,7 +2,7 @@
   <div class="dashboard-setting">
     <div v-if="IsShowCode" class="row" :key="'Code'+CountWidget+'_'+ReRender">
       <div class="col-12" style="padding:5px 15px">
-        <button class="btn btn-warning btn-sm" @click="IsShowCode=false">Ẩn code</button>
+        <button class="btn btn-warning btn-sm" @click="IsShowCode=false">Hide code</button>
       </div>
       <div class="col-12" style="padding:5px 15px">
         <textarea disabled rows="15" v-html="option" class="form-control"></textarea>
@@ -13,7 +13,7 @@
         <button
           class="btn btn-warning btn-sm"
           @click="()=>{this.ReRender++;this.IsShowView=false; }"
-        >Ẩn View</button>
+        >Hide View</button>
       </div>
       <div class="col-12">
         <div style="padding:5px 1px;height:500px;overflow:auto;">
@@ -23,16 +23,16 @@
     </div>
     <div v-else class="row" :key="'Setting'+CountWidget+'_'+ReRender">
       <div class="col-lg-4">
-        <input v-model="option.Title" class="form-control" placeholder="Tên bảng điều khiển" />
+        <input v-model="option.Title" class="form-control" placeholder="Name of dashboard" />
         <div class="row" style="margin-top:5px;margin-bottom:5px;">
           <div class="col-4">
-            <button class="btn btn-primary btn-sm" @click="AddWidget()">Thêm widget</button>
+            <button class="btn btn-primary btn-sm" @click="AddWidget()">Add widget</button>
           </div>
           <div class="col-4">
-            <button class="btn btn-warning btn-sm" @click="IsShowCode=true">Hiện code</button>
+            <button class="btn btn-warning btn-sm" @click="IsShowCode=true">Show code</button>
           </div>
           <div class="col-4">
-            <button class="btn btn-warning btn-sm" @click="IsShowView=true">Hiện view</button>
+            <button class="btn btn-warning btn-sm" @click="IsShowView=true">Show view</button>
           </div>
         </div>
         <ul :key="'ListWidget'+CountWidget+'_'+ReRender" class="widgets">
@@ -47,11 +47,11 @@
       <div class="col" :key="'SettingWidget'+CountWidget+'_'+ReRender">
         <div class="row">
           <div class="form-group col-6">
-            <label for="widget-name">Tên widget :</label>
+            <label for="widget-name">Name widget :</label>
             <input id="widget-name" class="form-control" v-model="CurrentWidget.Title" />
           </div>
           <div class="form-group col-6">
-            <label for="widget-permission">Mã quyền :</label>
+            <label for="widget-permission">Code:</label>
             <input
               id="widget-permission"
               class="form-control"
@@ -60,26 +60,26 @@
             />
           </div>
           <div class="form-group col-6">
-            <label for="widget-hidden">Ẩn widget</label>
+            <label for="widget-hidden">Visit widget</label>
             <b-form-checkbox id="widget-hidden" v-model="CurrentWidget.hidden" switch>
-              <span v-if="CurrentWidget.hidden">Ẩn widget</span>
-              <span v-else>Hiển thị</span>
+              <span v-if="CurrentWidget.hidden">Hide</span>
+              <span v-else>Show</span>
             </b-form-checkbox>
           </div>
           <div class="form-group col-6">
             <label for="widget-pinned">Pinned widget</label>
             <b-form-checkbox id="widget-pinned" v-model="CurrentWidget.pinned" switch>
-              <span v-if="CurrentWidget.pinned">Ghim cố định</span>
-              <span v-else>Cho phép thay đổi vị trí</span>
+              <span v-if="CurrentWidget.pinned">Pinned</span>
+              <span v-else>Not Pinned</span>
             </b-form-checkbox>
           </div>
         </div>
         <fieldset style="max-height:400px;min-height:250px; overflow-y:auto;overflow-x:hidden;">
-          <legend>Thiết lập dữ liệu</legend>
+          <legend>Setting Data</legend>
 
           <div class="row">
             <div class="form-group col-6">
-              <label for="widget-type">Kiểu widget</label>
+              <label for="widget-type">Type widget</label>
               <select
                 class="form-control"
                 id="widget-type"
@@ -104,17 +104,14 @@
   </div>
 </template>
 <script>
-
-
-
+import DashboardContainer from "./DashboardContainer.vue";
+import Widgets from './Widgets/index'
 export default {
+  components:{...Widgets,DashboardContainer},
   props: {
     option: null
   },
   computed: {
-    GetWidgets() {
-      return this.option.Layout;
-    },
     GetWidgetType() {
       return "Widget" + this.CurrentWidget.type;
     }
@@ -131,7 +128,7 @@ export default {
       this.option = {};
     }
     if (this.option.Title === undefined) {
-      this.option.Title = "Bảng điều khiển";
+      this.option.Title = "Dashboard";
     }
     if (this.option.Layout === undefined) {
       this.option.Layout = [];
@@ -217,6 +214,9 @@ export default {
 };
 </script>
 <style>
+.dashboard-setting{
+  padding: 10px;
+}
 .dashboard-setting .widgets {
   list-style: none;
   padding: 0;

@@ -31,13 +31,14 @@
 </style>
 
 <script>
-import * as utils from "./utils";
+import * as utils from "./utils.js";
 
 export const List = new Set();
 
+import WidgetBox from "./WidgetBox.vue";
 export default {
   components: {
-    
+    WidgetBox
   },
   props: {
     layout: {
@@ -576,6 +577,7 @@ export default {
       }
     },
     WindowResize(e) {
+      if(this.$refs.dashboard==undefined) return;
       var widthCell = parseInt((this.$refs.dashboard.clientWidth - this.margin*11) / 12);
       this.cellSize = {
         w: widthCell,
@@ -591,7 +593,7 @@ export default {
     let boxIds = this.$children.map(box => box.$props.boxId);
     this.createBoxLayout(...boxIds);
     this.$nextTick(function() {
-        this.WindowResize();
+      this.WindowResize();
       window.addEventListener("resize", this.WindowResize);
     });
   },
