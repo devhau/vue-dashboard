@@ -143,6 +143,7 @@ export default {
   },
   computed: {
     style() {
+      return {};
       var layoutSize = utils.getLayoutSize(this.layout);
       return {
         minWidth:

@@ -73,7 +73,7 @@ export default {
         {
           id: "widget-000004",
           Title: "All",
-          type: "Base",
+          type: "Chart",
           Permission: "00004",
           position: {
             x: 9,
@@ -88,7 +88,7 @@ export default {
         {
           id: "widget-000005",
           Title: "Char",
-          type: "Base",
+          type: "Chart",
           Permission: "00005",
           position: {
             x: 0,

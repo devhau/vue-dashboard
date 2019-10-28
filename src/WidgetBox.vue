@@ -16,12 +16,13 @@
 
 <style>
     .widget-box {
-        border: 1px solid #ccc;
-        background: #ddd;
+        overflow: hidden;
+        border-radius: 1px;
+        background: #ffffff;;
         position: absolute;
         z-index: 1;
         box-sizing: border-box;
-        padding: 5px;
+        padding: 0px;
     }
     .widget-box .widget-move{
         position: absolute;

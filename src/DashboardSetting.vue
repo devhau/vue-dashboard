@@ -86,7 +86,7 @@
                 v-model="CurrentWidget.type"
                 @change="ReRender++"
               >
-                <option v-for="item in ['Base','Short']" :value="item" :key="item">{{item}}</option>
+                <option v-for="item in ['Base','Short','Chart']" :value="item" :key="item">{{item}}</option>
               </select>
             </div>
             <div class="form-group col-12">

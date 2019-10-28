@@ -1,6 +1,6 @@
 {
   "name": "@hauerp/vue-dashboard",
-  "version": "0.0.1-test",
+  "version": "0.0.1-test2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hauerp/vue-dashboard.git"
@@ -37,6 +37,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.4",
+    "chart.js": "^2.9.1",
     "core-js": "^3.3.2",
     "vue": "^2.6.10",
     "vuetify": "^2.1.0"

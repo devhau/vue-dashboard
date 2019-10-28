@@ -1,5 +1,5 @@
 <template>
-  <div class="widget-short">
+  <div class="widget-chart">
     <div v-if="IsSetting" class="widget-setting">
       <h3>{{option.Title}}</h3>
        <div class="row">
@@ -14,39 +14,42 @@
         </div>
     </div>
     <div v-else class="widget-display">
-      <div class="row">
-        <div class="col">
-          <h5 class="card-title text-uppercase text-muted mb-0">{{Title}}</h5>
-          <span class="h2 font-weight-bold mb-0">{{Value}}</span>
-        </div>
-        <div class="col-auto">
-          <div class="icon">
-            <i class="fas fa-calendar fa-4x"></i>
-          </div>
-        </div>
-      </div>
-      <p class="mt-3 mb-0 text-muted text-sm">
-        <span class="text-success mr-2">
-          <i class="fa fa-arrow-up"></i> 3.48%
-        </span>
-        <span class="text-nowrap"></span>
-      </p>
+        <div class="chart-card">
+            <div class="chart-card-title">Thiết lập thử</div>
+            <div class="chart-card-body">
+
+            </div>
+            <div class="chart-card-bottom">
+
+            </div>
+            
     </div>
   </div>
 </template>
 <style>
-.widget-short{
+.widget-chart{
   height: 100%;
+  border: 1px solid #e3e6f0;
 }
-.widget-short .icon{
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100%;
-  border: 1px solid #ccc;
-  padding:3px;
-  border-radius: 100%;
+.widget-chart .chart-card{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+.widget-chart .chart-card .chart-card-title{
+    line-height: 50px;
+    padding: 5px;
+    background: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    font-weight: 700!important;
+    font-size: 1rem;
+    color:#4e73df!important;
+    height: 50px;
+    width: 100%;
+}
+.widget-chart .chart-card .chart-card-body{
+    height: calc(100% - 50px);
+    width: 100%;
 }
 </style>
 <script>

@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
       <v-btn
         text
-        href="https://github.com/hauerp/vue-dashboard/latest"
+        href="https://github.com/hauerp/vue-dashboard"
         target="_blank"
       >
         <span class="mr-2">Latest Release</span>
