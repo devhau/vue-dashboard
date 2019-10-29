@@ -1,10 +1,10 @@
 <template>
-  <div class="widget-chart">
+  <div class="hau-widget widget-chart">
     <div v-if="IsSetting" class="widget-setting">
       <h3>{{option.Title}}</h3>
        <div class="row">
           <div class="form-group col-6">
-            <label for="widget-name">Giá trị mặc định</label>
+            <label for="widget-name">Default</label>
             <input id="widget-name" class="form-control" v-model="option.data.Value" />
           </div>
           <div class="form-group col-6">
@@ -15,21 +15,22 @@
     </div>
     <div v-else class="widget-display">
         <div class="chart-card">
-            <div class="chart-card-title">Thiết lập thử</div>
+            <div class="chart-card-title">{{option.Title}}</div>
             <div class="chart-card-body">
 
             </div>
             <div class="chart-card-bottom">
 
-            </div>
-            
+            </div>            
     </div>
   </div>
 </template>
 <style>
 .widget-chart{
-  height: 100%;
-  border: 1px solid #e3e6f0;
+  border: 1px solid blue;
+}
+.widget-chart .widget-display{
+  padding: 0 !important;
 }
 .widget-chart .chart-card{
     width: 100%;
@@ -40,10 +41,10 @@
     line-height: 50px;
     padding: 5px;
     background: #f8f9fc;
-    border-bottom: 1px solid #e3e6f0;
+    border-bottom: 3px solid blue;
     font-weight: 700!important;
     font-size: 1rem;
-    color:#4e73df!important;
+    color:blue !important;
     height: 50px;
     width: 100%;
 }

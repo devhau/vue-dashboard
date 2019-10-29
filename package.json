@@ -1,12 +1,16 @@
 {
   "name": "@hauerp/vue-dashboard",
-  "version": "0.0.1-test2",
+  "version": "0.0.1-test3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hauerp/vue-dashboard.git"
   },
   "keywords": [
-    "auth"
+    "auth",
+    "vue-dashboard",
+    "theme dashboard",    
+    "admin dashboard",
+    "nuxt dashboard"
   ],
   "author": "hau soft",
   "license": "ISC",

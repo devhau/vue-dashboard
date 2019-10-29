@@ -1,5 +1,5 @@
 <template>
-  <div class="widget-base">
+  <div class="hau-widget widget-base">
     <div v-if="IsSetting" class="widget-setting">
       <h3>{{option.Title}}</h3>      
     </div>
@@ -9,18 +9,8 @@
   </div>
 </template>
 <style>
-.widget-base{
-  height: 100%;
-}
-.widget-base .icon{
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100%;
-  border: 1px solid #ccc;
-  padding:3px;
-  border-radius: 100%;
+.widget-base .widget-display{
+  border: 1px solid blue;
 }
 </style>
 <script>

@@ -14,7 +14,7 @@
       <i class="fa fa-dashboard"/>  <span v-if="option&&option.Title!==undefined">{{option.Title}}</span><span v-else>Dashboard</span> 
       <button type="button" class="btn btn-primary btn-sm btn-setting-dashboard" @click="ShowSetting()"><i class="fas fa-cog"/>Setting</button>
     </h2>
-    <DashboardContainer :layout.sync="option.Layout" />
+    <DashboardContainer :layout.sync="option.Layout" :key="IndexDashboard" />
   </div>
 </template>
 <style>
@@ -54,8 +54,13 @@ export default {
   props: {
     option: null
   },
+  mounted:{
+    
+  }
+  ,
   data: () => ({
     OprionTemp: {},
+    IndexDashboard:0,
     IsShowSetting: false
   }),
   created(){
@@ -73,6 +78,7 @@ export default {
       this.option={}
       this.option=JSON.parse(JSON.stringify(this.OprionTemp));
       this.$emit("SaveOption", this.OprionTemp);
+      this.IndexDashboard++;
       this.ClosePopup();
     },
     ClosePopup(){

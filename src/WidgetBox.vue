@@ -23,6 +23,16 @@
         z-index: 1;
         box-sizing: border-box;
         padding: 0px;
+        border-radius: 1px;
+    }    
+    .widget-box .hau-widget{
+        height: 100%;
+        width: 100%;
+    }
+    .widget-box .hau-widget .widget-display{
+        height: 100%;
+        width: 100%;
+        padding: 10px;
     }
     .widget-box .widget-move{
         position: absolute;

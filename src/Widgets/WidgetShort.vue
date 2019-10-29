@@ -1,11 +1,11 @@
 <template>
-  <div class="widget-short">
+  <div class="hau-widget widget-short">
     <div v-if="IsSetting" class="widget-setting">
       <h3>{{option.Title}}</h3>
        <div class="row">
           <div class="form-group col-6">
-            <label for="widget-name">Giá trị mặc định</label>
-            <input id="widget-name" class="form-control" v-model="option.data.Value" />
+            <label for="widget-name">Default</label>
+            <input id="widget-name" class="form-control" v-model="option.data['Value']" />
           </div>
           <div class="form-group col-6">
             <label for="widget-permission">Unit</label>
@@ -27,7 +27,7 @@
       </div>
       <p class="mt-3 mb-0 text-muted text-sm">
         <span class="text-success mr-2">
-          <i class="fa fa-arrow-up"></i> 3.48%
+          <i class="fa fa-arrow-up"></i> {{option.data['Value']}}%
         </span>
         <span class="text-nowrap"></span>
       </p>
@@ -37,16 +37,22 @@
 <style>
 .widget-short{
   height: 100%;
+  width: 100%;
 }
-.widget-short .icon{
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100%;
-  border: 1px solid #ccc;
-  padding:3px;
-  border-radius: 100%;
+.widget-short .widget-display{
+  border: 1px solid blue;
+  border-left: 15px solid blue;
+  color: blue;
+}
+.widget-display-red{
+  border: 1px solid red;
+  border-left: 15px solid red;
+  color: red;
+}
+.widget-display-blue{
+  border: 1px solid blue;
+  border-left: 15px solid blue;
+  color: blue;
 }
 </style>
 <script>
