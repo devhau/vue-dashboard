@@ -6,4 +6,5 @@ module.exports = {
           filename: 'index.html',
         },
     },
+    outputDir:"demo"
 }
