@@ -1,10 +1,13 @@
 # vue-dashboard
 
 ## Project setup
+
 ```
-npm install
+npm i @hauerp/vue-dashboard
 ```
 
-### Build and test
+facebook:
 ```
-npm run redev
+https://www.facebook.com/VueDashboard
+
+```
