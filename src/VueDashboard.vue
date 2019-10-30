@@ -12,7 +12,7 @@
     </div>
      <h2 style="padding-left: 5px">
       <i class="fa fa-dashboard"/>  <span v-if="option&&option.Title!==undefined">{{option.Title}}</span><span v-else>Dashboard</span> 
-      <button type="button" class="btn btn-primary btn-sm btn-setting-dashboard" @click="ShowSetting()"><i class="fas fa-cog"/>Setting</button>
+      <button type="button" class="btn btn-primary btn-sm btn-setting-dashboard" @click="ShowSetting()"><i class="fas fa-cog"/> Setting</button>
     </h2>
     <DashboardContainer :layout.sync="option.Layout" :key="IndexDashboard" />
   </div>
@@ -21,8 +21,9 @@
 .hauerp-vue-dashboard {
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 5px;
   min-height: 400px;
+  background:#f8f9fe;
 }
 .popup-dashboard-setting{
   position: fixed;

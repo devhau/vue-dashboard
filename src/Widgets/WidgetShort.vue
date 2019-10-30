@@ -21,7 +21,7 @@
         </div>
         <div class="col-auto">
           <div class="icon">
-            <i class="fas fa-calendar fa-4x"></i>
+            <i class="fas fa-calendar fa-2x"></i>
           </div>
         </div>
       </div>
@@ -40,19 +40,19 @@
   width: 100%;
 }
 .widget-short .widget-display{
-  border: 1px solid blue;
-  border-left: 15px solid blue;
-  color: blue;
+  border: 1px solid #aaa;
+  border-left: 15px solid #aaa;
+  color:blue !important;
+  padding: 0px 10px !important;
 }
-.widget-display-red{
-  border: 1px solid red;
-  border-left: 15px solid red;
-  color: red;
-}
-.widget-display-blue{
-  border: 1px solid blue;
-  border-left: 15px solid blue;
-  color: blue;
+.widget-short .icon{
+  background: wheat;
+  border: 1px solid wheat;
+  border-radius: 60px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 69px;
 }
 </style>
 <script>

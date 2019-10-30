@@ -1,6 +1,6 @@
 {
   "name": "@hauerp/vue-dashboard",
-  "version": "0.0.1-test3",
+  "version": "0.0.1-test4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hauerp/vue-dashboard.git"
@@ -8,7 +8,7 @@
   "keywords": [
     "auth",
     "vue-dashboard",
-    "theme dashboard",    
+    "theme dashboard",
     "admin dashboard",
     "nuxt dashboard"
   ],
@@ -40,6 +40,7 @@
     "tags.json"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.4",
     "chart.js": "^2.9.1",

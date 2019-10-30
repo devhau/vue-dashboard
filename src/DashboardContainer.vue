@@ -3,7 +3,7 @@
     <slot>
       <WidgetBox
         :dragSelector="dragSelector"
-        v-for="item in layout"
+        v-for="item in layoutSort"
         :boxId="item.id"
         :draggable="item.pinned===false&&dragSelector!=='*'"
         :key="item.id"
@@ -142,6 +142,9 @@ export default {
     };
   },
   computed: {
+    layoutSort(){
+      return this.layout.sort((a, b) => a.id.localeCompare(b.id));
+    },
     style() {
       return {};
       var layoutSize = utils.getLayoutSize(this.layout);

@@ -16,14 +16,11 @@
 
 <style>
     .widget-box {
-        overflow: hidden;
-        border-radius: 1px;
         background: #ffffff;;
         position: absolute;
         z-index: 1;
         box-sizing: border-box;
         padding: 0px;
-        border-radius: 1px;
     }    
     .widget-box .hau-widget{
         height: 100%;
