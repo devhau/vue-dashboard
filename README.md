@@ -5,21 +5,11 @@
 ```
 npm i @hauerp/vue-dashboard
 ```
-
-facebook:
-```
+Link:
 [Facebook](https://www.facebook.com/VueDashboard)
-```
-
-github:
-```
 [Github](https://github.com/hauerp/vue-dashboard)
-```
-
-Demo:
-```
 [Demo](https://hauerp.github.io/vue-dashboard/demo/)
-```
-infomation:
+
+Images:
 ![](https://raw.githubusercontent.com/hauerp/vue-dashboard/master/images/index.PNG)
 ![](https://raw.githubusercontent.com/hauerp/vue-dashboard/master/images/setting.PNG)
