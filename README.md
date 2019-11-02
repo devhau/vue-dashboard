@@ -9,12 +9,18 @@ npm i @hauerp/vue-dashboard
 facebook:
 
 ```
-https://www.facebook.com/VueDashboard
+[Facebook](https://www.facebook.com/VueDashboard)
+
+
+github:
+
+```
+[Github](https://github.com/hauerp/vue-dashboard)
 
 ```
 Demo:
 ```
-https://hauerp.github.io/vue-dashboard/demo/
+[Demo](https://hauerp.github.io/vue-dashboard/demo/)
 ```
 infomation:
 ![](https://raw.githubusercontent.com/hauerp/vue-dashboard/master/images/index.PNG)
