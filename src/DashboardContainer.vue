@@ -47,7 +47,7 @@ export default {
     },
     dragSelector: {
       type: String,
-      default: ".widget-move" //  default: '*'
+      default: "*" //  default: '*' .widget-move
     },
     /*
     cellSize: {
