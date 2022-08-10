@@ -9,10 +9,10 @@ Link:
 
 *[Facebook](https://www.facebook.com/VueDashboard)
 
-*[Github](https://github.com/hauerp/vue-dashboard)
+*[Github](https://github.com/devhau/vue-dashboard)
 
-*[Demo](https://hauerp.github.io/vue-dashboard/demo/)
+*[Demo](https://devhau.github.io/vue-dashboard/demo/)
 
 Images:
-![](https://raw.githubusercontent.com/hauerp/vue-dashboard/master/images/index.PNG)
-![](https://raw.githubusercontent.com/hauerp/vue-dashboard/master/images/setting.PNG)
+![](https://raw.githubusercontent.com/devhau/vue-dashboard/master/images/index.PNG)
+![](https://raw.githubusercontent.com/devhau/vue-dashboard/master/images/setting.PNG)
